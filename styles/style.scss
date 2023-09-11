@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$light-blue-color: #f6fcff;
+
+body {
+  margin: 0 6rem !important;
+  background-color: #fcfcfc;
+  nav {
+    margin: 24px 0;
+  }
+  .nav-wrapper {
+    height: 48px;
+  }
+  .custom-logo {
+    max-width: 123px;
+    max-height: 48px;
+  }
+}
+
+.main-wrapper {
+  border: 1px solid red;
+  height: calc(100vh - 200px);
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  padding: 24px;
+
+  .light-blue {
+    background-color: $light-blue-color;
+  }
+
+  .methods-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+  
+    .bank-icon {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        border-radius: 50%;
+        background-color: rgba(180, 122, 255, 0.1)
+    }
+    .wallet-icon{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        border-radius: 50%;
+        background-color: rgba(46, 129, 255, 0.1);
+    }
+    .d-flex {
+      flex: 1;
+      margin: 0;
+      background-color: $light-blue-color;
+      border-radius: 16px;
+      padding: 24px;
+      gap: 32px;
+    }
+    .d-flex .radio-wrapper {
+        margin: 0;
+        padding: 0;
+      }
+    .d-flex .radio-wrapper p{
+        flex: 5;
+        margin-bottom: 0;
+      }
+
+    .dot {
+        width: 4px;
+        height: 4px;
+        background-color: #000;
+        display: block;
+        margin: 2px auto; 
+        border-radius: 50%; 
+      }
+      .dropdown .btn {
+      height: 30px;
+      margin-top: 0 !important;
+      }
+      .dropdown ul {
+        color: #212121;
+      }
+      .radio-wrapper .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: red;
+        border-color: red;
+      }
+      
+  }
+
+  div .btn-outline-danger {
+    margin-top: 32px;
+    background-color: rgba(216, 25, 35, 0.1);
+    color: rgba(216, 25, 35, 1);
+    padding: 12px 24px;
+    border-color: rgba(216, 25, 35, 0.1);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    margin: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

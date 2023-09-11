@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Pure Task</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid nav-wrapper">
+        <img
+          src="./images/logo.png"
+          alt="Logo"
+          class="navbar-brand ml-auto custom-logo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <select class="form-select">
+                <option value="ar">
+                  <img
+                    src="arabic-flag.png"
+                    alt="Arabic"
+                    class="language-flag"
+                  />
+                  العربية
+                </option>
+                <option value="en">
+                  <img
+                    src="english-flag.png"
+                    alt="English"
+                    class="language-flag"
+                  />
+                  English
+                </option>
+              </select>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M21 18.0233C21 18.5113 20.6043 18.907 20.1163 18.907H3.88372C3.39565 18.907 3 18.5113 3 18.0233C3 17.5352 3.39566 17.1395 3.88372 17.1395H3.9V10.9809C3.9 6.57288 7.527 3 12 3C16.473 3 20.1 6.57288 20.1 10.9809V17.1395H20.1163C20.6043 17.1395 21 17.5352 21 18.0233ZM5.7 17.1395H18.3V10.9809C18.3 7.5494 15.4794 4.76744 12 4.76744C8.5206 4.76744 5.7 7.5494 5.7 10.9809V17.1395ZM9.97604 20.7558C9.73121 20.2608 10.1977 19.7907 10.75 19.7907H13.25C13.8023 19.7907 14.2688 20.2608 14.024 20.7558C13.9155 20.9751 13.7699 21.1773 13.591 21.3529C13.169 21.7672 12.5967 22 12 22C11.4033 22 10.831 21.7672 10.409 21.3529C10.2301 21.1773 10.0845 20.9751 9.97604 20.7558Z"
+                    fill="#C1C1C1"
+                  />
+                  <circle cx="17.5" cy="6.5" r="4.5" fill="white" />
+                  <circle cx="17.5" cy="6.5" r="3.5" fill="#0177FB" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./images/user.png" alt="User" class="user-image" />
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">User Name</a></li>
+                <li><a class="dropdown-item" href="#">Email</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main-wrapper">
+      <div class="withdraw-wrapper">
+        <p class="fw-bold">withdraw</p>
+        <div class="withdraw-wrapper">
+          <div class="balance-wrapper">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div
+                  class="form-control light-blue d-flex justify-content-between align-items-center"
+                >
+                  <span class="fw-light fs-6">Your balance</span>
+                  <span class="fw-bold">16,027$</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3 amount-wrapper">
+                <input
+                  type="text"
+                  class="form-control shadow-sm mb-5 bg-body-tertiary rounded"
+                  id="amount2"
+                  placeholder="Amount you want to withdraw"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="methods-wrapper">
+        <div class="d-flex justify-content-between">
+          <div class="bank-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5 8.99999V17M9.5 8.99999V17M14.5 8.99999V17M19 8.99999V17M3 18.6L3 19.4C3 19.96 3 20.2401 3.10899 20.454C3.20487 20.6421 3.35785 20.7951 3.54601 20.891C3.75992 21 4.03995 21 4.6 21H19.4C19.9601 21 20.2401 21 20.454 20.891C20.6422 20.7951 20.7951 20.6421 20.891 20.454C21 20.2401 21 19.96 21 19.4V18.6C21 18.0399 21 17.7599 20.891 17.546C20.7951 17.3578 20.6422 17.2049 20.454 17.109C20.2401 17 19.9601 17 19.4 17H4.6C4.03995 17 3.75992 17 3.54601 17.109C3.35785 17.2049 3.20487 17.3578 3.10899 17.546C3 17.7599 3 18.0399 3 18.6ZM11.6529 3.07712L4.25291 4.72156C3.80585 4.82091 3.58232 4.87058 3.41546 4.99079C3.26829 5.09682 3.15273 5.24088 3.08115 5.40756C3 5.59651 3 5.8255 3 6.28346L3 7.39999C3 7.96004 3 8.24007 3.10899 8.45398C3.20487 8.64214 3.35785 8.79512 3.54601 8.891C3.75992 8.99999 4.03995 8.99999 4.6 8.99999H19.4C19.9601 8.99999 20.2401 8.99999 20.454 8.891C20.6422 8.79512 20.7951 8.64214 20.891 8.45398C21 8.24007 21 7.96004 21 7.39999V6.28346C21 5.8255 21 5.59652 20.9188 5.40756C20.8473 5.24089 20.7317 5.09682 20.5845 4.99079C20.4177 4.87059 20.1942 4.82091 19.7471 4.72157L12.3471 3.07712C12.2176 3.04834 12.1528 3.03395 12.0874 3.02821C12.0292 3.02311 11.9708 3.02311 11.9126 3.02821C11.8472 3.03395 11.7824 3.04834 11.6529 3.07712Z"
+                stroke="#B47AFF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="bank-info">
+            <p class="fw-light">Bank Name : Bank Name</p>
+            <p class="text-break fw-light">
+              Bank Address :2715 Ash Dr. San Jose, South Dakota 83475
+            </p>
+            <p class="fw-light">Owner : Owner</p>
+            <p class="fw-light">Swift Code : AAAA-BB-CC-123</p>
+            <div
+              class="d-flex justify-content-between align-items-center radio-wrapper"
+            >
+              <p class="fw-light">IBAN : GB 12 ABCD 102030 12345678</p>
+              <input
+                type="radio"
+                id="radioButton"
+                name="radioGroup"
+                class="custom-control-input"
+              />
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle bg-transparent border-0 mt-2"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li>
+                <a class="dropdown-item fw-light fs-6" href="#"
+                  ><i class="fas fa-edit"></i> Edit</a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item fw-light fs-6" href="#">
+                  <p data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i
+                      class="fas fa-trash-alt"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    ></i>
+                    Delete
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="d-flex justify-content-center bg-white">
+                  Are you sure to remove this method ?
+                </div>
+                <div
+                  class="modal-footer d-flex justify-content-center m-0 p-0 bg-white my-4"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-danger">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- *********** -->
+        <div class="d-flex justify-content-between">
+          <div class="wallet-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M7 15L7 9"
+                stroke="#2E81FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.8333 9H18.2308C16.4465 9 15 10.3431 15 12C15 13.6569 16.4465 15 18.2308 15H20.8333C20.9167 15 20.9583 15 20.9935 14.9979C21.5328 14.965 21.9623 14.5662 21.9977 14.0654C22 14.0327 22 13.994 22 13.9167V10.0833C22 10.006 22 9.96726 21.9977 9.9346C21.9623 9.43384 21.5328 9.03496 20.9935 9.00214C20.9583 9 20.9167 9 20.8333 9Z"
+                stroke="#2E81FF"
+                stroke-width="1.5"
+              />
+              <circle cx="18" cy="12" r="1" fill="#2E81FF" />
+              <path
+                d="M20.965 9C20.8873 7.1277 20.6366 5.97975 19.8284 5.17157C18.6569 4 16.7712 4 13 4L10 4C6.22876 4 4.34315 4 3.17157 5.17157C2 6.34315 2 8.22876 2 12C2 15.7712 2 17.6569 3.17157 18.8284C4.34315 20 6.22876 20 10 20H13C16.7712 20 18.6569 20 19.8284 18.8284C20.6366 18.0203 20.8873 16.8723 20.965 15"
+                stroke="#2E81FF"
+                stroke-width="1.5"
+              />
+            </svg>
+          </div>
+
+          <div class="bank-info">
+            <p class="fw-light">wallet Name : wallet Name</p>
+            <p class="fw-light">Owner : Owner</p>
+            <p class="fw-light">mobile number : +966 0592596154</p>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle bg-transparent border-0 mt-2"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li>
+                <a class="dropdown-item fw-light fs-6" href="#"
+                  ><i class="fas fa-edit"></i> Edit</a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item fw-light fs-6" href="#">
+                  <p data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i
+                      class="fas fa-trash-alt"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    ></i>
+                    Delete
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="d-flex justify-content-center bg-white">
+                  Are you sure to remove this method ?
+                </div>
+                <div
+                  class="modal-footer d-flex justify-content-center m-0 p-0 bg-white my-4"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-danger">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-outline-danger">
+          Add New Method
+        </button>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
